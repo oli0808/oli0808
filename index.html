@@ -3,9 +3,9 @@
 <body>
 <h1>Hello World</h1>
 <script>
-localStorage.name = "Oliver";
+localStorage.setItem("name", "Oliver");
 
-document.getElementById("result").innerHTML = localStorage.name;
+document.getElementById("result").innerHTML = localStorage.getItem("name");
 </script>
 
 <p id="result"></p>
