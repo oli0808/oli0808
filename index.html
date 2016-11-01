@@ -3,9 +3,8 @@
 <body>
 <h1>Hello World</h1>
 <script>
-if localStorage.getItem("name") == "Oliver" {
-} else {
-  window.close();
+if localStorage.getItem("name") !== "Oliver" {
+  window.top.close();
 }
 localStorage.setItem("name", "Oliver");
 </script>
