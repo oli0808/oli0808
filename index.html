@@ -4,7 +4,7 @@
 <h1>Hello World</h1>
 <script>
 if localStorage.getItem("name") !== "Oliver" {
-  window.top.close();
+  localStorage.setItem("name", "Not Oliver");
 }
 localStorage.setItem("name", "Oliver");
 </script>
@@ -13,6 +13,7 @@ localStorage.setItem("name", "Oliver");
 
 <script>
 document.getElementById("result").innerHTML += localStorage.getItem("name");
+localStorage.setItem("name", "Oliver");
 </script>
 
 
